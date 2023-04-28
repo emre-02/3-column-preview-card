@@ -21,7 +21,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- [Solution URL]()
+- [Solution URL](https://github.com/emre-02/3-column-preview-card)
 - [Live Site URL]()
 
 ## My process
