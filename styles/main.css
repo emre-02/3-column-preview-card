@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+/*main*/
+
+.cars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 72px 24px;
+}
+
+.cars__sedans {
+  background-color: #e28525;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.cars__suvs {
+  background-color: #016972;
+}
+.cars__luxury {
+  background-color: #00403f;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.cars__sedans,
+.cars__suvs,
+.cars__luxury {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+  padding: 24px;
+  color: white;
+}
+
+/*Sedans, Suvs, Luxury*/
+
+.cars__sedans--text,
+.cars__suvs--text,
+.cars__luxury--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+
+.cars__sedans--text h2,
+.cars__suvs--text h2,
+.cars__luxury--text h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 32px;
+}
+
+.cars__sedans--text p,
+.cars__suvs--text p,
+.cars__luxury--text p {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 24px;
+  color: rgb(188, 188, 188);
+}
+
+.cars__sedans--text button,
+.cars__suvs--text button,
+.cars__luxury--text button {
+  border: 3px solid white;
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+.cars__sedans--text button {
+  background-color: #e28525;
+}
+.cars__suvs--text button {
+  background-color: #016972;
+}
+.cars__luxury--text button {
+  background-color: #00403f;
+}
+
+.cars__sedans--text button:hover,
+.cars__suvs--text button:hover,
+.cars__luxury--text button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 800px) {
+  .cars {
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 24px;
+  }
+
+  .cars__sedans {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-right-radius: 0;
+  }
+
+  .cars__luxury {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+}
