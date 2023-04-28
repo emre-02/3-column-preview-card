@@ -22,7 +22,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ### Links
 
 - [Solution URL](https://github.com/emre-02/3-column-preview-card)
-- [Live Site URL]()
+- [Live Site URL](https://emre-02.github.io/3-column-preview-card/)
 
 ## My process
 
